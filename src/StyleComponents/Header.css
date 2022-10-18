@@ -1,0 +1,61 @@
+.cont-nav {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.HeaderLogo {
+  width: 4rem;
+  height: 3rem;
+  margin-left: 1rem;
+  z-index: 99;
+}
+
+.HeaderTittle {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-decoration: none;
+}
+
+#HeaderLink {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: larger;
+  margin: 0 auto;
+  margin-right: -115px;
+}
+
+.Header-cad,
+.Header-log {
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.Header-cad :hover,
+.Header-log :hover {
+  color: rgb(117, 117, 117) !important;
+  text-decoration: none;
+  transition: 0.3s;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.justify_tittle {
+  position: relative;
+  text-align: center;
+  transform: translate(-5%);
+}
+
+.HeaderLink :hover {
+  color: rgb(133, 133, 133) !important;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(133, 133, 133) !important;
+}

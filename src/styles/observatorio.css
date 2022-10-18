@@ -1,0 +1,24 @@
+.contanier-obs{
+    display: flex;
+    margin: 2rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: solid 2px #fff;
+    width: fit-content;
+    height: fit-content;
+}
+
+.body-obs{
+    background-color: transparent;
+}
+
+.header-obs{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    max-width: 100% ;
+}
+
+

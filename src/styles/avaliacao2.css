@@ -1,0 +1,11 @@
+.ava-header{
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(10, 1, 145);
+}
+
+.pog{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
