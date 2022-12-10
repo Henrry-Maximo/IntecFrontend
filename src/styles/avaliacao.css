@@ -1,0 +1,60 @@
+.cont-pai {
+  margin: 2rem 2rem 2rem 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: solid 2px #fff;
+  width: 95%;
+  height: fit-content;
+  padding: 2rem;
+
+}
+.aluno-mod-turm{
+  display: flex;
+  gap: 2rem;
+}
+
+.doc-pag {
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 105vh;
+  margin-top: 2rem;
+  margin: auto;
+  padding: auto;
+  box-shadow: 10px 10px 20px;
+  ;
+}
+
+.doc-header {
+  text-align: left;
+  font-size: 15px;
+}
+
+.doc-name {
+  text-align: center;
+  margin: 2rem;
+}
+
+.doc-body {
+  text-align: center;
+}
+
+.doc-text {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.doc-text-obg {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-avaliacao {
+  margin-top: 2%;
+}
+
+.btn-avaliacao-env{
+  margin-top: 2%;
+  margin-left: 2%;
+}

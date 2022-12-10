@@ -1,0 +1,41 @@
+.contanier-obs{
+    margin: 2rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: solid 2px #fff;
+    width: 115rem;
+    height: fit-content;
+}
+
+.body-obs{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-obs{
+    display: flex;
+    flex-direction:column;
+    margin-top: -3rem;
+    max-width: 50rem ;
+}
+
+
+
+.row-cols-md-4>* {
+    flex: 0 0 auto;
+    width: 25rem !important; 
+    
+}
+
+.IntecObs{
+    color: #fff;
+    text-decoration: underline 10%;
+}
+
+.divHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

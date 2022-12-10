@@ -1,0 +1,30 @@
+.modal-Consultar{
+    background-color: #0b1d3f;
+    width: 30vw;
+    height: 25rem;
+    margin: auto;
+    margin-top: 10rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2%;
+    padding: 2rem;
+}
+
+.cont-modal-consultar{
+    text-align: left;
+    font-weight: bold;
+    gap: 2rem;
+}
+
+.separa-curso-consulta{
+    background-color: rgb(212, 212, 212);
+}
+
+.label-periodo{
+    margin-top: 2rem;
+}
+
+.btn-sair-consulta{
+    margin-top: 2rem;
+}

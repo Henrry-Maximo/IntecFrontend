@@ -1,0 +1,52 @@
+.pai-coord{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 3rem;
+    border: solid 2px #fff;
+    height: fit-content;
+    justify-content: center;
+
+}
+
+.textFunc{
+    color: #fff;
+    text-decoration: underline 10%;
+    margin-bottom: 5rem;
+}
+
+.Card-Group{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cont-btn-curso{
+    padding: 4px;
+    width: 20rem;
+    height: 20rem;
+    margin-left: 8px;
+    font-size: smaller;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    justify-content: center;
+}
+  
+  .p-coord-curso{
+    color: #0b1d3f;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+  
+}
+  
+  .btn-logo{
+    margin-top: 6rem;
+    color:  #0b1d3f;
+}
+
+  a{
+    text-decoration: none !important; 
+}

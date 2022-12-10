@@ -1,0 +1,43 @@
+.CardG{
+    display: flex;
+    gap: 2rem;
+    padding: auto;
+    
+}
+
+.ItemCard1  {
+    padding: auto;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 20%;
+    
+    
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.CardLink{
+    color: #fff;
+    text-decoration: none;
+    
+  } 
+
+.CardLink :hover, .CardLink :focus{
+    color: rgb(107, 107, 107) !important;
+    background-color: transparent;
+    
+    
+}

@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: #0b1d3f;;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group .btn {
+  position: relative;
+  z-index: 0 !important; 
+}
+
+

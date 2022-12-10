@@ -1,0 +1,21 @@
+.linha{
+  margin:auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: solid 2px #fff;
+  width: 179vh;
+  height: 95%;
+}
+
+.linha main{
+  padding: 2rem;
+}
+
+
+.linha main header{
+  display: flex;
+  margin-bottom: 2rem;
+  height: 30%;
+  justify-content: space-between;
+  gap: 1rem;
+}

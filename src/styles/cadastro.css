@@ -1,0 +1,54 @@
+.cadastro-cont{
+    width: 550px;
+    padding: 55px 55px 37px 55px;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #fff;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.9%;
+    position: relative;
+    border-radius: 1%;
+}
+
+.cadastro-Logo{
+    width: 8rem;
+    height: 6rem; 
+    margin-bottom: 15px;
+}
+
+
+.tittle-cad{
+    margin-bottom: 2rem;
+}
+
+.flex-field{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#box-check {
+    float: none;
+    margin-left: none;
+    margin-bottom: 2rem;
+}
+
+.cont-tipo{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.user-text{
+    text-align: left;
+    font-weight: bold;
+}
+
+.separa-curso{
+    background-color: rgb(212, 212, 212);
+}
