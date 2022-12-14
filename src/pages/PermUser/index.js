@@ -1,16 +1,17 @@
 //Page PermUser: Autorizar Usuário.
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Btn from '../../components/BotaoFlutuante';
 import '../../styles/PermUser.css';
 import api from '../../service/api.js';
 import axios from 'axios';
+// import axios from 'axios';
 
 
 function Index() {
-
+     
     const [users, setUsers] = useState([]);
     const [regClass, setRegClass] = useState("");
     const [regNumber, setRegNumber] = useState("");
@@ -39,17 +40,23 @@ function Index() {
     // Envio dos dados do solicitante logado e do usuário que receberá autorização.
     async function inhandleSubmit(e) {
         e.preventDefault();
+
+        // const useregClass = JSON.parse(sessionStorage.getItem('useregClass'));
+        // const useregNumber = JSON.parse(sessionStorage.getItem('useregNumber'));
         const authData = {
-            "useregClass": sessionStorage.getItem("useregClass"),
-            "useregNumber": sessionStorage.getItem("useregNumber"),
-            "regClass": regClass[0],
-            "regNumber": regNumber[1],
-            "authority": authority
+            "useregClass": sessionStorage.getItem('useregClass'),
+            "useregNumber": sessionStorage.getItem('useregNumber'),
+            "regClass": regClass,
+            "regNumber": regNumber,
+            "authority": authority,
     }
 
-    const { data } = await axios.post('/setPermUser', authData);
-    alert(data.message);
-    alert('Authorização solicitada: '+ authority);
+    alert(JSON.stringify(authData));
+    console.log('test >>>>> '+ JSON.stringify(authData))
+
+    const { data } = await api.post('/setPermUser', authData);
+    alert('Autorização solicitada com sucesso: '+ authority);
+    console.log(data);
 }
 
 return (

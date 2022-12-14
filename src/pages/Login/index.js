@@ -1,9 +1,9 @@
-import React, { useCallback } from "react";
+// import React, { useCallback } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Imagem from "../../components/Imagens/transparente.png";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import api from "../../service/api.js";
 import "../../styles/login.css";
 import jwt_decode from "jwt-decode";
@@ -15,7 +15,7 @@ function Index() {
   const [regClass, setRegClass] = useState(null);
 
   // um objeto para ter acesso as todas funcionalidades do useNavigate
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
   async function handleLogin(e) {
     // evitar um re-carregamento da página ao enviar os dados, só atualiza se os dados estiverem certo.
@@ -31,7 +31,7 @@ function Index() {
       };
 
       const { data } = await api.post("/login", dataLogin);
-      console.log("Results >>>test " + JSON.stringify(data))
+      console.log("Results >>>test " + JSON.stringify(data));
       const name = jwt_decode(data.token);
       // exibir os dados após a decodificação do token
       // console.log(name, 'test aqui');
@@ -40,16 +40,19 @@ function Index() {
       // inserindo na variável '_user_logado' o id do usuário e o nome
       localStorage.setItem('_user_logado', name.infoUser.user_name);
 
-      // inserção da classe e do número de registro, informado no front-end
-      sessionStorage.setItem('regClass', JSON.stringify(dataLogin.registro_classe));
-      sessionStorage.setItem('regNumber', JSON.stringify(dataLogin.registro_numero));
+      // Manda os dados 'RM'/'NUMERO' para o componente de exibição do nome na header
+      localStorage.setItem('useregClass', JSON.stringify(dataLogin.registro_classe));
+      localStorage.setItem('useregNumber', JSON.stringify(dataLogin.registro_numero));
 
+      // inserção da classe e do número de registro, informando no front-end para uso de inserções de permissões de usuários
+      sessionStorage.setItem('useregClass', (dataLogin.registro_classe));
+      sessionStorage.setItem('useregNumber', (dataLogin.registro_numero));
 
       // armazena os dados do usuário no navegador para não precisar logar novamente
       sessionStorage.setItem("login", true);
 
-      // Criando a criptografia
-      sessionStorage.setItem("jwt", data.token);
+      // // Criando a criptografia
+      // sessionStorage.setItem("jwt", data.token);
 
       // Pega o nome do usuário do front-end
       // sessionStorage.setItem('_user_logado', JSON.stringify(dataLogin.user_name)); //stringify transforma objeto em string

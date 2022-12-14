@@ -6,11 +6,12 @@ function index() {
 
   const usuarioLogadoString =  localStorage.getItem('_user_logado');
 
-  const regNumber = JSON.parse(sessionStorage.getItem('regNumber'));
-  const regClass = JSON.parse(sessionStorage.getItem('regClass'));
+  const regNumber = JSON.parse(localStorage.getItem('useregNumber'));
+  const regClass = JSON.parse(localStorage.getItem('useregClass'));
 
-  var user = usuarioLogadoString
-  
+
+  var user = usuarioLogadoString;
+
   return (
     <>
       {user !== null ?
